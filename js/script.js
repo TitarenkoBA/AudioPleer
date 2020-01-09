@@ -144,7 +144,7 @@ function download_func() {
             let url = URL.createObjectURL(blob);
             let a = doc.createElement('a');
             a.href = url;
-            a.download = `${doc.querySelector('.pleer__track_name').innerHTML}.xlsx`;
+            a.download = `${doc.querySelector('.pleer__track_name').innerHTML}.mp3`;
             doc.body.appendChild(a);  
             a.click();    
             a.remove();        
